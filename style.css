@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* HEADER */
+
+
+header {
+    width: 95%;
+    height: 100px;
+    border-radius: 100px;
+    box-shadow:0 0 0.3123rem rgba(0, 0, 0, 0.25) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    margin-top: 20px;
+    position: fixed;
+    z-index: 1000;
+    background: white;
+    top: 0;
+}
+
+
+
+
+
+
+
+.left-div   {
+    width: 50%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.logo   {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+    padding: 0;
+}
+
+ nav a {
+    text-decoration: none;
+    color: #595959;
+    font-family: "Lora";
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 20px;
+    margin-left: 10px;
+    
+}
+
+nav a:hover {
+    background-color: #e5e5e5;
+}
+
+.right-div  {
+    width: 40%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+nav a.active {
+    background-color: #00843D;
+    border-radius: 20px;
+    color: white;
+}
+
+.material-symbols-outlined {
+    height: 22px;
+    color: #595959;
+}
+
+
+
+
+
+
+.right-div h3 {
+    height: 22px;
+    margin: 0;
+    margin-right: 20px;
+    color: #595959;
+}
+
+.right-div button {
+    width: 150px;    
+    height: 45px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 0;
+    background-color: #00843D;
+    color: white;
+    font-family: "Lora";
+}
+
+.right-div button:hover {
+    background-color: #017437
+}
+
+.right-div svg {
+    display: none;
+}
+
+
+/* SECTION 1 */
+
+
+
+section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+}
+
+.section1 h1 {
+    margin-top: 150px;
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.section1 hr {
+    width: 60%;
+    margin-top: 20px;
+    height: 3px;
+    background-color: #00843D;
+    border-radius: 20px;
+    border: 0;
+}
+
+.section1 p {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.leftlink {
+    margin-right: 20px; 
+    text-decoration: none; 
+    background-color: #00843D;
+    color: white;
+    padding: 8px;
+    border-radius: 8px; 
+}
+
+.leftlink:hover {
+    background-color: #017437;
+}
+
+
+.rightlink {
+    color: #00843D;
+    font-weight: bold;
+}
+
+/* SECTION 2 */
+
+.section2 {
+    background-image: url(images/VolvoBackTest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+article {
+    width: 350px;
+    height: 450px;
+    border: 1px dashed gray;
+    background-color: white;
+    border-radius: 20px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+article img {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.articleIMG {
+    height: 215px;
+}
+
+article h3 {
+    color: #00843D;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+article p {
+    text-align: center;
+    color: #5B5B5B;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+
+
+/* Section 3 */
+
+.section3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+
+}
+
+.section3 h3 {
+    color: #453C35;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.section3 h1 {
+    color: #00843D;
+    font-weight: 500;
+}
+
+.section3 p {
+    font-size: 30px;
+    color: black;
+    width: 70%;
+    text-align: center;
+}
+
+.section3 .container {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 35px;
+}
+
+.container .card {
+    border-radius: 20px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 60px 19px 60px 0;
+}
+
+.card h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #00843D;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+}
+
+.fd1 {
+    width: 100%;
+    background-color: #000E00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.fd1 h4 { 
+    color: white;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+.fd1 span {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.fd1 h3 {
+    color: #1f8a43;
+    margin: 0 20px;
+}
+
+.fd1 img {
+    width: 400px;
+}
+
+
+.fd2 {
+    width: 100%;
+    display: flex;
+    background-color: rgb(2, 49, 2)
+}
+
+
+.fd2 h3 {
+    color: gray;
+    margin: 18px 0;
+    margin-left: 20%;
+
+}
+
+
+.fd2 a {
+    color: #2e9e53;
+    margin: 18px 10px;
+}
+
+.fd2 div {
+    color: gray;
+    margin: 18px 5px;
+}
+
+@media (max-width: 1443px) {
+    .left-div {
+        width: 70%
+    }
+}
+
+@media (max-width: 1070px) {
+    .left-div {
+        width: 70%;
+    }
+    .right-div span {
+        display: none;
+    }
+    .right-div {
+        width: 20%;
+    }
+    .section3 p {
+        font-size: 20px;
+    }
+    .leftlink {
+        font-size: 20px;
+    }
+    .rightlink {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1017px) {
+    .right-div h3 {
+        display: none;
+    }
+    .right-div span {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .logo {
+        margin-left: 10px;
+    }
+
+    nav {
+        display: none;
+    }
+    .right-div button {
+        display: none;
+    }
+
+    .right-div svg {
+        display: block;
+        width: 50px;
+        height: 40px;
+        color: #595959;
+        margin-right: 20px;
+
+    }
+
+    .leftlink {
+        font-size: 25px;
+    }
+
+    .rightlink {
+        font-size: 25px;
+    }
+
+    .section2 {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .firstarticle {
+        margin-bottom: 40px;
+    }
+
+    .section3 h1 { 
+        font-size: 28px
+    }
+
+    .section3 p {
+        font-size: 25px;
+        width: 90%;
+        margin-bottom: 80px;
+    }
+
+   .section3 .container {
+    grid-template-rows: repeat(3, 280px);
+    grid-template-columns: repeat(2, 200px);
+    column-gap: 20px;
+   }
+
+   .fd2 h3{
+    margin-left: 0;
+    font-size: 20px;
+   }
+
+   .fd2 {
+    display: flex;
+    justify-content: space-between;
+   }
+}
